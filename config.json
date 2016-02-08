@@ -1,0 +1,91 @@
+{
+  "admin users": [
+    "bdowns"
+  ],
+  "areas": [
+    "SingleVA_PostCheckin",
+    "MultiVA_PostCheckin",
+    "SingleVA_B2B_PostCheckin",
+    "MultiVA_B2B_Postcheckin",
+    "SingleVA_UI_BATS",
+    "MultiVA_UI_BATS",
+    "AIM-SANITY"
+  ],
+  "branches": [
+    "vcops62",
+    "main",
+    "vcops61",
+    "vcops603"
+  ],
+  "db": {
+    "driver": "sqlite3",
+    "filename": "vropsbot.db"
+  },
+  "debug": false,
+  "delayFactorMs": 1000,
+  "pushPluginConfig": {
+    "channels": [
+      "vrops-cat"
+    ],
+    "groups": [
+      ""
+    ],
+    "pollInterval": "60s"
+  },
+  "results": [
+    "PASS",
+    "FAIL",
+    "INVALID",
+    "INVALID-I",
+    "TIMEOUT"
+  ],
+  "slackbotAuthToken": "",
+  "switchBoard": {
+    "heartbeatChannelSize": 10,
+    "responseChannelSize": 10,
+    "saveChannelSize": 10
+  },
+  "slas": [
+    "VA_Bats",
+    "RHEL_Bats",
+    "WIN_Bats",
+    "VA_Functional",
+    "RHEL_Functional",
+    "WIN_Functional",
+    "2hr",
+    "1day"
+  ],
+  "targets": [
+    "vrops",
+    "vcops-vmware-om-adapter",
+    "vcops-pyremvcenter-adapter",
+    "vscm",
+    "vsutilities",
+    "vcops-vsphere-solution-pak",
+    "vcopssuitevm",
+    "vcopssuiteinstall",
+    "vcopssuitepak",
+    "vropstests"
+  ],
+  "urlTemplates": {
+    "buildwebBranch": "<https://buildweb.eng.vmware.com/sb/?branch=%s|%s>",
+    "buildwebTarget": "<https://buildweb.eng.vmware.com/sb/?product=%s|%s>",
+    "buildwebSb": "<https://buildweb.eng.vmware.com/sb/%d|%s>",
+    "catArea": "<https://mbu-cat.eng.vmware.com/testruns/area/%s|%s>",
+    "catTestrun": "<https://mbu-cat.eng.vmware.com/testrun/%d|%s>",
+    "p4webBranch": "<https://p4web.eng.vmware.com:11800/@md=c&cd=//&pat=//depot/*/%s/...&c=jV3@/%s?ac=10|%s>"
+  },
+  "urls": {
+    "baseCatUrl": "http://mbu-cat.eng.vmware.com",
+    "baseBuildUrl": "/api/v2.0/deliverable",
+    "baseRecommendedUrl": "/api/v2.0/recommendation",
+    "baseTestrunUrl": "/api/v2.0/testrun"
+  },
+  "vro": {
+    "baseurl": "https://ip:8281",
+    "password": "",
+    "insecure": true,
+    "username": "vropsbot",
+    "wfurl": "/vco/api/workflows/"
+  }
+}

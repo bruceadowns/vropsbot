@@ -1,0 +1,4 @@
+# qeconfig.wp.fsi
+Host qeconfig.wp.fsi
+Hostname qeconfig.wp.fsi
+User git
